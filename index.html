@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,500&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'poppins';
+	}
+.background{
+	background-image: url('pai.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+nav ul{
+
+	margin-right:10px;
+}
+nav h2{
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+span{
+	color: #f9004b;
+}
+nav ul li{
+	display: inline-block;
+	padding: 10px 25px;
+		list-style-type: none;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li:hover{
+	background-color: #f9004d;
+	transform: scale(1.2);
+}
+.btn{
+	background-color: #f9004d;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4ms;
+	margin-right: 5px;
+
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+
+.Main{
+	position: absolute;
+	top:45%;
+	left: 8%;
+	transform: translateY(-50);
+}
+h4{
+	color: #fcfcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+h1{
+	color: #ffff;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+
+}
+h3{
+	color: #fff;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+.container-btn form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.container-btn form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border-radius: 30px;
+	outline: none;
+}
+.container-btn form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 30px;
+	background-color: #f9004d;
+	color: #fff;
+	box-shadow: 0px 0px 15px #858585;
+	right: 6px;
+	top: 6px;
+
+}
+.background-color-sobre{
+	background-color: #191919;
+	width: 100%;
+	padding: 100px 0px;
+}
+.background-color-sobre img{
+	width: 400px;
+	height: 470px ;
+}
+.text-sobre{
+	width: 550px;
+
+}
+.Main-sobre{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.text-sobre h2{
+	color: #fff;
+	font-size: 50px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.text-sobre h5{
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+.text-sobre p{
+	color: #fcfcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.button{
+	background-color: #f9004d;
+	color: white;
+	text-transform: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 20px;
+	border-radius: 30px;
+	transition: .4s;
+}
+.button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+.container-servicos{
+	background-color: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: #fff;
+	font-size: 50px;
+	width: 1000px;
+	margin: 30px auto;
+	text-align: center;
+}
+.caixa{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+		flex-wrap: wrap;
+
+}
+.card{
+	background-color: #191919;
+	height: 365px;
+	width: 300px;
+	border: 20px;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
+} 
+.card h5{
+	color: #fff;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.card p{
+	color: #fcfcfc;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.btn{
+	border: none;
+	padding: 18px;
+}
+.btn hover:{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+.me-contrate{
+	width: 100%;
+	height: 240px;
+	background-color: #191919;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.me-contrate p{
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background-color: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+h6{
+	font-size: 35px;
+	color: #fff;
+}
+footer p{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10ox;
+	line-height: 25px;
+}
+.redes-sociais{
+	display: flex;
+
+}
+.redes-sociais a{
+	background-color: #f9004d;
+	width: 45px;
+	height: 45px;
+	padding: 15px;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color:#fff;
+	text-decoration: none;
+	font-size: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.redes-sociais a:hover{
+	transform: scale(1.2);
+	transition: .3s;
+}
+
+.end p{
+	position: relative;
+	color: #f9004d;
+	bottom: 35px;
+	font-size: 14px;
+	top: 35px;
+}
+</style>
+</head>
+<body>
+	<div class="background">
+		<nav>
+			<h2>Portifo<span>lio</span></h2>
+			<ul class="cabecalho-link">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Sobre mim</a></li>
+				<li><a href="">Serviçoes</a></li>
+				<li><a href="">Habilidades</a></li>
+				<li><a href="">Contatos</a></li>
+				
+			</ul>
+			<a href="" class="btn">Subscribe</a>
+		</nav>
+		<div class="Main">
+			
+			<h4>Ola, meu nome é</h4>
+			<h1>Liebert <span>Correia</span></h1>
+			<h3>Eu sou um desenvolvedor web</h3>
+			<div class="container-btn">
+			<form>
+				<input type="email" name="email	" id="email" placeholder="	Envie seu Email">
+				<input type="submit" name="submit" id="submit" value="	Envie">
+				</form>
+			</div>
+		</div>
+	</div>
+	<section class="background-color-sobre">
+		<div class="Main-sobre">
+			<img src="01.png">
+			<div class="text-sobre">
+				<h2>sobre-mim</h2>
+				<h5>desenvolvedor <span>& prgramador</span></h5>
+				<p>eu sou um desenvolvedor web
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<button class="button" type="button" >Vamos conversar</button>
+			</div>
+		</div>
+	</section>
+	<div class="container-servicos">
+		<div class="title">
+			<h2>Nossos Seviços</h2>
+		</div>
+		<div class="caixa">
+			
+			<div class="card">
+				<i class="glyphicon glyphicon-cloud"></i>
+				<h5>Desenvolvimento Web</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				<button class="btn">Ler mais...</button>
+			</div>
+			
+			<div class="card">
+				<i class="glyphicon glyphicon-envelope"></i>
+				<h5>Desenvolvimento Web</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				<button class="btn">Ler mais...</button>
+			</div>
+
+			<div class="card">
+				<i class="glyphicon glyphicon-thumbs-up"></i>
+				<h5>Desenvolvimento Web</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				<button class="btn">Ler mais...</button>
+			</div>
+		</div>
+	</div>
+	<div class="me-contrate">
+		<p>contate minha equipe para a gente criar um bonito site para você</p>
+		<button class="btn">Enviar mensagem</button>
+	</div>
+	<footer>
+		<h6>Liebert correia</h6>
+		<p>para mais HTML e CSS, tutoriais - por favor click</p>
+		<div class="redes-sociais">
+			<a href=""><i class="glyphicon glyphicon-cloud"></i>
+			</a>
+			<a href=""><i class="glyphicon glyphicon-cloud"></i>
+			</a>
+			<a href=""><i class="glyphicon glyphicon-cloud"></i>
+			</a>
+		</div>
+		<div class="end">
+			<p>copyRight by alcowebs</p>
+		</div>
+	</footer>
+</body>
+</html>
